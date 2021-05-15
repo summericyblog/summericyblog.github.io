@@ -1,7 +1,6 @@
 ---
 title: B站视频免去区域限制
 date: 2021-05-09 12:34:55
-updated: 2021-05-13 12:34:55
 top: false
 cover: false
 password:
@@ -12,6 +11,7 @@ tags:
 - bilibili
 - 云函数
 categories: 技术
+index_img: 2021/05/09/B站视频免去区域限制/001_bili_area_limit.png
 ---
 
 ## 前言
