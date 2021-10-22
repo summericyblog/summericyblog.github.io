@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>消失的女孩</title>
+    <link href="/2021/10/22/%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A5%B3%E5%AD%A9/"/>
+    <url>/2021/10/22/%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A5%B3%E5%AD%A9/</url>
+    
+    <content type="html"><![CDATA[<p>猫界难题是如何喝到水龙头里的水，狗界难题是如何带杆过门，那人界难题应该就是解概率题了。每逢论坛中抛出一个个看似简单的概率题，总有各色人士通过理论实践或者编程的方法，得出不同的答案，而又说服不了对方，观众们也莫衷一是。在这些概率题中，有一道名声昭著的题目是这样的：</p><p><img src="001.gif" alt="猫界难题"><br><img src="002.gif" alt="狗界难题"></p><p>爱丽丝，鲍勃和克里斯汀是好朋友。克里斯汀家有两个孩子，鲍勃并不知道两个孩子的性别，有一天爱丽丝问鲍勃，“克里斯汀家有一个是男孩，那另一个是男孩的概率是多少呢？”</p><p>耿直的鲍勃觉得，一个是不是男孩和另一个孩子的性别又没有影响，他们又不是双胞胎，所以答案就是二分之一罗。</p><p>学过条件概率的鲍勃觉得耿直的鲍勃说的不对，这明显是一个条件概率的问题。条件是至少有一个是男孩，而要求的概率是另一个是男孩的概率，那么</p><p>P(都是男孩|至少有一个男孩)=(1/4)/(3/4)=3/4</p><p>这样说来另一个是女孩的概率更大。</p><p>脑筋爱转弯的鲍勃觉得可以换个问题，如果第一个孩子是男孩，那么第二个孩子是男孩的概率是多少？如果第二个孩子是男孩，那么第一个孩子是男孩的概率是多少？最后的答案应该介于这两个之间。而这两个问题的答案显然就是1/2。</p><p>爱笑的鲍勃觉得上一个鲍勃真搞笑，脑筋简直转了180度。概率是这样可以平均的么？我玩一盘游戏能赢你一块钱，玩另一盘游戏能赢你一块钱，那我玩两个游戏也只能赢你一块钱么？</p><p>程序员鲍勃觉得这些理论家太虚妄了，于是他编写程序写了一下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css">while n&lt;<span class="hljs-number">1000</span>:<br>    first_child = <span class="hljs-built_in">random</span>(boy, girl)<br>    second_child = <span class="hljs-built_in">random</span>(boy, girl)<br>    if any_of_child.<span class="hljs-built_in">isboy</span>():<br>        sample += <span class="hljs-number">1</span><br>        if another_child.<span class="hljs-built_in">isboy</span>():<br>            success += <span class="hljs-number">1</span><br>prob = success/sample<br></code></pre></td></tr></table></figure><p>Run！Result get。概率是2/3！</p><p>爱笑的鲍勃笑意更浓了，既然都假定了只有生了男孩的才纳入编程的样本，那答案怎么会不是2/3呢？</p><p>“要不然呢？”这时候杠精鲍勃发话了，当两个孩子都是男孩的时候，爱丽丝会这样问，两个都是女孩的时候，爱丽丝会问，“其中一个是女孩，另一个是女孩的概率是多少？”；还是问，“其中一个是女孩，另一个是男孩的概率是多少？”</p><p>爱丽丝觉得这个问题并不重要，她说，我还是会问男孩。</p><p>“也就是说，你更关心男孩罗！只要两个里边有男孩，你就会说其中一个是男孩，问另一个是男孩的概率；反过来，只有两个都是女孩，你才会换假设条件。所以概率就是1/3罗。你这个男权主义者！”</p><p>“你才是男权主义！我随便问的，有可能问男孩，有可能问女孩。就是在你们这种男权主义者的影响下，我才这样说的，按说应该是随机问的。”</p><p>“你倒真是男女平等！”杠精鲍勃露出坏笑，爱丽丝更生气了。“那有男有女的家庭，你也随便问罗。可见所有等概率事件中，听到你问‘其中一个是女孩’的鲍勃已经被一脚踢开了，大概有1/4个吧，那最后的概率就是1/2。”</p><p>“可见，”杠精鲍勃开始了他的总结，“男孩的概率取决于爱丽丝是个男权主义还是田园女权，那么，爱丽丝小姐，你是男权主义还是田园女权呢？”各色鲍勃一同转过头来看着爱丽丝，爱笑的鲍勃简直笑开了花。爱丽丝大声喊：“鲍勃，你真是个门杠转生的男权主义者！”</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>雪莱诗译(6)--一个罗马人的房间</title>
     <link href="/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-6-%E4%B8%80%E4%B8%AA%E7%BD%97%E9%A9%AC%E4%BA%BA%E7%9A%84%E6%88%BF%E9%97%B4/"/>
     <url>/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-6-%E4%B8%80%E4%B8%AA%E7%BD%97%E9%A9%AC%E4%BA%BA%E7%9A%84%E6%88%BF%E9%97%B4/</url>
