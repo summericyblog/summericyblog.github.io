@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="夏语冰">
+  <meta name="keywords" content="">
+  
+  <title>怦然心动 - 夏语冰的小站</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>夏语冰的小站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="怦然心动">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-07 21:26" pubdate>
+        2021年11月7日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      15
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">怦然心动</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2 分钟前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>“The first day I met Bryce Loski, I flipped.” From Juli Baker.</p>
+<img src="/2021/11/07/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/002_star.webp" srcset="/img/loading.gif" lazyload class="" title="怦然心动">
+<p>刚刚开始两分钟，这部影片便向我们展示了它名字的含义——怦然心动。假若只是为了解释这标题的话，后边一个多小时的电影就完全不需要了，人生若只如初见，何事秋风悲画扇。影片从两个小孩子的爱情故事出发，同时讨论了尊严，平等，和梦想。既没有美国英雄式的人物，也没有荡气回肠的情节，简简单单的故事，简简单单的相见，简简单单的动人心弦。</p>
+<p>看过一句话，未曾相逢先一笑，初会便已许平生。当 Juli 初见 Bryce 的时候，Juli 一直在笑，荡涤尘埃的笑。两个人一句话也没说，而 Juli 心里却已经想到了这是否将成她的初吻。当男孩遇到女孩的时候，当故事开始的时候，故事的结局便在心中开始预演了。当然电影故事没有这么顺利， “害羞” 的 Bryce 选择逃避，正如他所说的那样，这是一个七岁男子汉的唯一选择。</p>
+<p>大概许多人会奇怪，头发长长、眼睛大大、笑容漾漾，天使一样的 Juli 为什么会执着追求 Bryce ——当然男主角的精致漂亮无可否认，然而影片最初给的答案是那双闪闪的眼睛。也许这并不是令人满意的答案，但后来 Juli的父亲告诉她，整体大于部分之和，而她也在树顶得到了顿悟。于是 Juli 认识到，爱情不应当蒙蔽自己的双眼，她应该正视这段感情， 问自己Bryce 是否是一个整体大于部分之和的人。而当 Bryce 向 Juli 道歉的时候，他不知道的是在 Juli 心中，他已经是一个 “较少” 的人了。</p>
+<img src="/2021/11/07/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/001_somepeople.webp" srcset="/img/loading.gif" lazyload class="" title="整体与部分">
+<p>什么叫做整体大于部分之和呢？记得生物课上讲过，在生命诞生之前，在电闪雷鸣的大气、呼啸奔腾的大海和怒火不歇的火山间隙，有机物小分子可以自发产生，小分子也可以聚合成大分子，甚至形成一定的结构，但是如何从这些零件组装出哪怕最简单的生命，至今无法在实验室中重现。整体并不是部分的简单堆砌，若是两个人在一起形同路人，那又何必同行呢？就像忒修斯之船的名字不在于船上的某块木板，而在于所有木板组装成的大船有了新的功能。一个所谓 “较少” ——或是说整体小于部分之和——的人，便是缺少作为人的更高的灵魂。培根就曾说，如果在精神上再不追求神圣，那么人与禽兽就毫无分别。从影片中的对比来看， Juli 显然是那个更多的人，她有自己的一棵树、一幅画和一片天；而 Bryce 更像是一个精致的乖孩子，他偷偷扔了 Juli 的鸡蛋，没有反驳朋友对 Juli 的污蔑。 Bryce 说自己胆怯，大概大多数人都胆怯成为一个不一样的人吧。</p>
+<p>而 Juli 就是一个不一样的人，正如 Bryce 外公 Chet 所说， A girl like that doesn’t live next door to everybody 。之后 Chet 便说出了那段经典的台词： “Some of us get dipped in flat, some in satin, some in gloss. But every once in a while you find someone who’s iridescent, and when you do, nothing will ever compare.” 这句话倒是很好地诠释了什么叫做怦然心动，而且是灵魂上的触动，不会有秋风画扇之悲。Bryce 在七岁时遇到了彩虹一样的人，哦，是吗？童话故事常常以王子和公主幸福的生活在一起了为结尾，可事实呢？在 Flipped 的海报中，两人坐在树上，Bryce 望着 Juli ，而 Juli 望着的，是远方的天空。</p>
+<img src="/2021/11/07/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/003_tree.webp" srcset="/img/loading.gif" lazyload class="" title="树上的天空">
+<p>电影中另一点触动我的是 Juli 坐在树上，看天边的彩霞，说道，Some days the sunsets would be purple and pink, and some days they were a blazing orange, setting fire to the clouds on the horizon. 突然发现，似乎早已记不得落霞的颜色，记不得昨天晚上的月亮是圆是缺，仿佛生活中本就没有这些细节，现实的生活也如劣质的游戏画面一样，在你没有注意到的地方偷工减料。</p>
+<p>看过这个电影，不禁会想，我会遇到我的iridescent的人吗？想来是不能的，单单希冀于见到一个我生君已老的人都如气泡般难以捉住。童话里、小说中、史书上多少王子公主、明君良臣、莫逆好友，是作者求之不得的惋惜，还是往事如梦的怀恋呢？当两个影子紧紧依偎在一起的时候，它们的主人的眼睛中是否闪烁着爱怜的光呢？时光匆匆流去，从不回头，当我驾着白马回望的时候，不知道会给出什么样的答案呢？所谓整体大于部分之和，当我的心漏跳的时候，我关注的会是整体还是部分呢？当然是部分，当一个让你的心怦怦跳的人站在你的面前的时候，你只会用眼睛、而非用心去看她的。但当秋风吹落黄叶的时候，寒风会让人从梦中惊醒，还是让人失去掀开被子、翻身的欲望呢？</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E4%B9%A6%E5%BD%B1%E8%AF%84%E8%AE%BA/">书影评论</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%A2%A6%E6%83%B3/">梦想</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除引用外，均可随意更改转载，无须署名。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/06/06/%E8%AF%BBOpen-Access-Manifesto%E6%89%80%E6%84%9F/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">读Open Access Manifesto所感</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/07/To-the-Moon/">
+                        <span class="hidden-mobile">To the Moon</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

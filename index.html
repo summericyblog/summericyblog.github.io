@@ -1,0 +1,886 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="夏语冰">
+  <meta name="keywords" content="">
+  
+  <title>夏语冰的小站</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>夏语冰的小站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="云遮雾掩水映月，山回路转得见君">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/07/22/%E7%A0%B4%E7%A2%8E%E7%94%B5%E5%BD%B1%E4%B9%8B%E5%BF%83/" target="_self">
+          破碎电影之心
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/07/22/%E7%A0%B4%E7%A2%8E%E7%94%B5%E5%BD%B1%E4%B9%8B%E5%BF%83/" target="_self">
+          
+          
+            
+          
+          Salinger 写过一个短篇小说名为 The Heart of a Broken Story ，小说里 Salinger 写下了广为流传的一句话：Love is a touch and yet not a touch. 然而故事里的男孩并没有给女孩说这句话， Salinger 也说自已永远不会给 Collier’s 写稿子，因为在一个“男孩遇到女孩”的故事里，男孩总要遇到女孩。这是故事的开端，也
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-07-22 22:11" pubdate>
+              2022-07-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E4%B9%A6%E5%BD%B1%E8%AF%84%E8%AE%BA/">书影评论</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+            
+              <a href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
+            
+              <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+            
+              <a href="/tags/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/06/06/%E8%AF%BBOpen-Access-Manifesto%E6%89%80%E6%84%9F/" target="_self">
+          读Open Access Manifesto所感
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/06/06/%E8%AF%BBOpen-Access-Manifesto%E6%89%80%E6%84%9F/" target="_self">
+          
+          
+            
+          
+          “信息即是权力”。Aaron Swartz在Open Access Manifesto中这样写道。随着互联网逐步成为我们的生活必需品，我们常说，一个人可以轻易从网上获取他需要的信息，但显然有的东西不在此列。
+付费电影、书籍、论文，这些都被版权精巧地保护着。版权，是个大家都挺熟悉的词语。但许多人似乎都不知道版权到底是什么；包括许多权威解释和法律条文，都巧妙地混淆了版权的含义。无论是百度百科，还是维基
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-06 16:40" pubdate>
+              2022-06-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%89%88%E6%9D%83/">版权</a>
+            
+              <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91/">互联网</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/07/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/" target="_self">
+          怦然心动
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/07/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/" target="_self">
+          
+          
+            
+          
+          “The first day I met Bryce Loski, I flipped.” From Juli Baker.
+
+刚刚开始两分钟，这部影片便向我们展示了它名字的含义——怦然心动。假若只是为了解释这标题的话，后边一个多小时的电影就完全不需要了，人生若只如初见，何事秋风悲画扇。影片从两个小孩子的爱情故事出发，同时讨论了尊严，平等，和梦想。既没有美国英雄式的人物，也没有荡气回肠的情节，简简
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-07 21:26" pubdate>
+              2021-11-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E4%B9%A6%E5%BD%B1%E8%AF%84%E8%AE%BA/">书影评论</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%A2%A6%E6%83%B3/">梦想</a>
+            
+              <a href="/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+            
+              <a href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
+            
+              <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/07/To-the-Moon/" target="_self">
+          To the Moon
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/07/To-the-Moon/" target="_self">
+          
+          
+            
+          
+          To the Moon是一个剧情向、像素RPG画风的小游戏，小小的游戏中讲了一个不错的故事。
+故事设定中一个叫Sigmund的公司有一种仪器，可以进入到人的记忆中修改记忆，从而帮助将死之人完成他们最后的愿望。公司的两位员工，Eva和Watt，因此来到John的家中帮助他实现愿望。从John的记忆中，两人得知John希望去到月球，却没能找到他希望如此的原因。因为John儿时的记忆似乎因为服用某种药物
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-07 21:05" pubdate>
+              2021-11-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E4%B9%A6%E5%BD%B1%E8%AF%84%E8%AE%BA/">书影评论</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+            
+              <a href="/tags/%E5%89%A7%E6%83%85/">剧情</a>
+            
+              <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+            
+              <a href="/tags/%E6%A2%A6%E6%83%B3/">梦想</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/05/%E4%BB%8E%E7%94%9F%E8%82%B2%E7%8E%87%E8%B0%88%E8%B5%B7/" target="_self">
+          从生育率谈起
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/11/05/%E4%BB%8E%E7%94%9F%E8%82%B2%E7%8E%87%E8%B0%88%E8%B5%B7/" target="_self">
+          
+          
+            
+          
+          从生育率谈起所谓总和生育率，就是一个妇女一生中生育儿女的数量。一夫一妻的社会中，生育率需要维持在2以上才可以保持人口的稳定。Wiki 上则指明由于婴儿夭折等原因，总和生育率需要达到2.1才能达到时代更替水平。简单理解就是，一夫一妻，生两个孩子才能保持人口不会下降。
+然而我们惯常用来衡量人口变化的并非是生育率，而是出生率。所谓出生率，就是一年中新生儿和总人数的比值。直观想来，更高的生育率会带来更高的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-05 22:28" pubdate>
+              2021-11-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%94%9F%E8%82%B2%E7%8E%87/">生育率</a>
+            
+              <a href="/tags/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A/">中国社会</a>
+            
+              <a href="/tags/%E8%80%81%E9%BE%84%E5%8C%96/">老龄化</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/25/%E6%88%91%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%9A%84%E9%A9%AC%E5%B0%BE/" target="_self">
+          我看到你的马尾
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/25/%E6%88%91%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%9A%84%E9%A9%AC%E5%B0%BE/" target="_self">
+          
+          
+            
+          
+          马尾固然漂亮，可这篇文章却不是要讲马尾的漂亮之处的。不知道大家发现没有，同样是留马尾，有人的马尾随着走路飘飘荡荡，有人的却岿然不动。有人的马尾走路的时候静静地立在那里，但到了跑步的时候，就开始放飞自我了。记得高中时候，每天早上都要跑操，百无聊赖之中也常常去看女生的马尾，甩来甩去甚至都快到了水平位置；早起的昏昏沉沉中看到甩来甩去的头发，也算是为枯燥的学习生活，增添了一抹黑色的乐趣。
+但作为一个爱好科
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-25 12:51" pubdate>
+              2021-10-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%89%A9%E7%90%86/">物理</a>
+            
+              <a href="/tags/%E6%8C%AF%E5%8A%A8/">振动</a>
+            
+              <a href="/tags/%E5%A4%B4%E5%8F%91/">头发</a>
+            
+              <a href="/tags/%E6%97%A5%E5%B8%B8/">日常</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/22/%E4%BB%8E%E4%B8%89%E5%91%B3%E4%B9%A6%E5%B1%8B%E5%88%B0%E7%99%BE%E8%8D%89%E5%9B%AD/" target="_self">
+          从三味书屋到百草园
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/22/%E4%BB%8E%E4%B8%89%E5%91%B3%E4%B9%A6%E5%B1%8B%E5%88%B0%E7%99%BE%E8%8D%89%E5%9B%AD/" target="_self">
+          
+          
+            
+          
+          偶然，在知乎上看到一个问题：“如何看待越来越多的年轻人选择‘睡到自然醒，酒店吃外卖’这种旅行方式？”大概就是说，当年的旅游，着实是为了旅居他乡，游览当地；而如今，旅游只是换个没人认识自己的地方松弛下来。
+这是为什么呢，问题的回答说得很直接，当今景点不是稀缺的资源了，闲暇才是。人这一生为钱，为名，为爱；说到底，为的是心中稀缺的东西。夔怜蚿，蚿怜蛇，蛇怜风，风怜目，目怜心。如是而已。大千世界千变万化，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-22 20:25" pubdate>
+              2021-10-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+            
+              <a href="/tags/%E8%AF%97%E6%AD%8C/">诗歌</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/22/%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A5%B3%E5%AD%A9/" target="_self">
+          消失的女孩
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/22/%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A5%B3%E5%AD%A9/" target="_self">
+          
+          
+            
+          
+          猫界难题是如何喝到水龙头里的水，狗界难题是如何带杆过门，那人界难题应该就是解概率题了。每逢论坛中抛出一个看似简单、细思之下却又违反常识的概率题，总有各色人士通过理论实践或者编程的方法，得出不同的答案，却又说服不了对方，观众们也莫衷一是。在这些概率题中，有一道名声昭著的题目是这样的：
+
+爱丽丝，鲍勃和克里斯汀是好朋友。克里斯汀家有两个孩子，鲍勃并不知道两个孩子的性别，有一天爱丽丝问鲍勃，“克里斯汀家
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-22 19:47" pubdate>
+              2021-10-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%B0%E5%AD%A6/">数学</a>
+            
+              <a href="/tags/%E6%A6%82%E7%8E%87/">概率</a>
+            
+              <a href="/tags/%E7%A7%91%E6%99%AE/">科普</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-6-%E4%B8%80%E4%B8%AA%E7%BD%97%E9%A9%AC%E4%BA%BA%E7%9A%84%E6%88%BF%E9%97%B4/" target="_self">
+          雪莱诗译(6)--一个罗马人的房间
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-6-%E4%B8%80%E4%B8%AA%E7%BD%97%E9%A9%AC%E4%BA%BA%E7%9A%84%E6%88%BF%E9%97%B4/" target="_self">
+          
+          
+            
+          
+          原文A Roman’s Chamber
+I.In the cave which wild weeds coverWait for thine aethereal lover;For the pallid moon is waning,O’er the spiral cypress hangingAnd the moon no cloud is staining.
+II.It was once a 
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-03 22:49" pubdate>
+              2021-10-03
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E8%AF%97%E6%AD%8C/">诗歌</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%9B%AA%E8%8E%B1/">雪莱</a>
+            
+              <a href="/tags/%E7%BF%BB%E8%AF%91/">翻译</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-5-%E6%96%B0%E5%9B%BD%E6%AD%8C/" target="_self">
+          雪莱诗译(5)--新国歌
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/03/%E9%9B%AA%E8%8E%B1%E8%AF%97%E8%AF%91-5-%E6%96%B0%E5%9B%BD%E6%AD%8C/" target="_self">
+          
+          
+            
+          
+          原文A New National Anthem
+I.God prosper, speed,and save,God raise from England’s graveHer murdered Queen!Pave with swift victoryThe steps of Liberty,Whom Britons own to beImmortal Queen.
+II.See, she com
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-03 22:20" pubdate>
+              2021-10-03
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E8%AF%97%E6%AD%8C/">诗歌</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%9B%AA%E8%8E%B1/">雪莱</a>
+            
+              <a href="/tags/%E7%BF%BB%E8%AF%91/">翻译</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

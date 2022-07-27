@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="夏语冰">
+  <meta name="keywords" content="">
+  
+  <title>从三味书屋到百草园 - 夏语冰的小站</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>夏语冰的小站</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="从三味书屋到百草园">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-10-22 20:25" pubdate>
+        2021年10月22日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      15
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">从三味书屋到百草园</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2 分钟前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>偶然，在知乎上看到一个问题：“<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/439200189">如何看待越来越多的年轻人选择‘睡到自然醒，酒店吃外卖’这种旅行方式？</a>”大概就是说，当年的旅游，着实是为了旅居他乡，游览当地；而如今，旅游只是换个没人认识自己的地方松弛下来。</p>
+<p>这是为什么呢，问题的回答说得很直接，当今景点不是稀缺的资源了，闲暇才是。人这一生为钱，为名，为爱；说到底，为的是心中稀缺的东西。夔怜蚿，蚿怜蛇，蛇怜风，风怜目，目怜心。如是而已。大千世界千变万化，不变的还是人心。</p>
+<p>首先，社会中交织的网依旧沉重地压在我们背上。就像当你你抬头看那闪闪的明月时，如水的月光也会压迫着你。无论工作学习，还是人情世故，生活中总有许多人想起你、羁挂你、烦扰你，触碰着你。我们是渴望他人气味的群居动物，内心深处却也有一种挥之不去的独居念头。当我们旅游的时候，远离同事家人，突然有了正当的理由把自己的灵魂关在自己的躯壳里。就像是不间断跳舞的玩偶，突然松下了发条，可以为自己跳舞却怅然不知所措。所谓无欲则刚，生活中太多要关注的事情了，而当需要关注的事情消失之后，枷锁也隐形了。《肖申克的救赎》中，服刑50年的布鲁克斯在自由中自杀了。我们心中向往不一样的明天，但我们的身体面对生活的变化，却会默默地颤抖。</p>
+<p>其次，外界环境也为这种思想提供了环境。试想五十年前，一百年前，我们会有这样的想法吗？常言道在家靠父母，出门靠朋友。离家在外并不是一件安全的事情，剪径强盗，地头无赖，更是一个人、尤其是女生、难以处理的存在。而如今的治安，即使说不上多好，起码杀人越货、明面抢劫的事是少有的。尤其若处在酒店及相对繁华的区域，凌晨在街上闲逛也没有什么危险。</p>
+<p>再者，网络的发达使得当我们无所事事时，总可以变得有事做。游戏、电影、直播、书籍、视频……无数的信息如同大海般在我们面前汹涌，而打开它的钥匙却小巧玲珑。几乎人人都有的手机可以存下一辈子也看不完的书，身处帷幄之中，也可神游千里之外。有一些主播，身处远离家乡的城市，大部分时间留在家中，不出家门。他所面对的，一边是热闹的网络与朋友，一边是清冷的现实。难免问一句，明日之日，庄生梦蝶好呢还是蝶梦庄生好呢？</p>
+<p>那么，这种闲暇好吗？</p>
+<p>这种涉及价值判断的东西，我先来是不愿做出判断的。因为色有黑白，人有好恶，但这世界只走一回，大家说得再多，做出的选择不会骗人。无论我们现在说好说坏，时间总会给出答案。</p>
+<p>凯恩斯曾经疑惑，当我们的物质非常丰富之后，人们还做什么呢？开尔文勋爵说，如今物理的大厦已经建成，之后的物理学家只需要修修补补就可以了。但我们看到，如今的世界依旧十分动荡，需要我们做的依旧很多，但许多人可能没有意识到，我们的发展已经很快了。一百万年前，直立人已经出现了，可直到一万年之前，人类才懂得种植作物；直到5000年前，人们才渐渐使用文字记录历史。我们常说中华上下五千年，可直到1840年，中国才真正被工业革命打开了大门。70年前国家成立一贫如洗，到如今大多数人衣食无忧。我们甚至可以展望，有一天，我们不需要工作，便拥有充裕的食物和相当的资源。</p>
+<p>可这真的是一件好事吗？现代经济学讲的第一个概念叫做稀缺性，当我们的物质充裕之后，稀缺性会消失吗？大概不会，就像赌徒永远也赢不到足够的钱，我们的欲望也是无穷的。但奇怪的是，似乎我们渐渐可以被满足了，每天睡到自然醒，点到差不多的外卖，玩玩手机和电脑，看看有趣的视频和文字。一天就过去了。</p>
+<p>这是我们渐渐变得容易满足，还是梦想渐渐远离了我们？</p>
+<p>初中学过鲁迅的一篇文章，说他幼时，在百草园学习玩耍，随心所欲，不闻窗外事；后来到了三味书屋，读书不求甚解。而我们从小便长在书屋中品尝甜苦，到如今，怀念的是否是那已建起高大亮堂高楼的百草园呢？</p>
+<p>钢筋水泥入侵了梦乡</p>
+<p>天空湛蓝，草地——<br>突然变得灰白，雪白，亮白<br>白得发烫，刺得我难以直视<br>想要离开，手上<br>却缠满了丝线，另一端<br>连接着玻璃幕门和白炽灯泡<br>以及白花花的地面</p>
+<p>我猜我身后定是黑暗的森林<br>也许还有悬崖瀑布，猛虎豺狼<br>一只手——<br>轻柔托住我将要扭转的脑袋<br>是谁？我感到额头清凉的一吻<br>将我吻进了梦乡，梦乡<br>是绿色被剥去的白</p>
+<p>我梦见身处机器轰鸣的车间<br>“你将一直在这里工作”<br>每个人都在忙碌，除了我<br>忙碌的机器推开了我，我属于这里<br>却不属于这里的工作</p>
+<p>“重复啊重复，你的过去和未来是在哪里？”<br>我蓦得惊醒，趁温柔的手<br>不注意的时候，猛地回头<br>熊熊的大火映红了我的苍白</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AF%97%E6%AD%8C/">诗歌</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除引用外，均可随意更改转载，无须署名。
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/10/25/%E6%88%91%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%9A%84%E9%A9%AC%E5%B0%BE/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">我看到你的马尾</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/10/22/%E6%B6%88%E5%A4%B1%E7%9A%84%E5%A5%B3%E5%AD%A9/">
+                        <span class="hidden-mobile">消失的女孩</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
