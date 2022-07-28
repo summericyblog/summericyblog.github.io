@@ -149,3 +149,12 @@ about:
 
 links:
   enable: false
+
+deploy:
+  type: git
+  repo:
+    github:
+      url: https://github.com/summericyblog/summericyblog.github.io
+      branch: main
+  name: Summericy
+  email: gavinflying@outlook.com
