@@ -3,7 +3,8 @@ title: To the Moon
 top: false
 cover: false
 toc: true
-mathjax: true
+math:
+mermaid:
 date: 2021-11-07 21:05:35
 password:
 summary:

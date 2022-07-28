@@ -3,7 +3,8 @@ title: 读Open Access Manifesto所感
 top: false
 cover: false
 toc: true
-mathjax: true
+math:
+mermaid:
 date: 2022-06-06 16:40:32
 password:
 summary:

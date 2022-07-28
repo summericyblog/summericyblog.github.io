@@ -5,7 +5,8 @@ top: false
 cover: false
 password:
 toc: true
-mathjax: true
+math:
+mermaid:
 summary:
 tags:
 categories:
