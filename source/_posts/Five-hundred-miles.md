@@ -42,7 +42,8 @@ Lord I can't go back home this ole way.
 
 So If you miss this train I'm on,
 you will know that I am gone
-You can hear the whistle blow a hundred miles,
+You can hear the whistle blow a hundred miles.
+
 A hundred miles, a hundred miles,
 a hundred miles, a hundred miles,
 You can hear the whistle blow a hundred miles.
