@@ -103,7 +103,7 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/summericyblog/summericyblog.github.io
+  repository: git@summericy:summericyblog/summericyblog.github.io.git
   branch: main
-  name: Summericy
+  name: summericy
   email: gavinflying@outlook.com
