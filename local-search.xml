@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Rime 设置记录</title>
+    <link href="/2024/05/03/Rime%20%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
+    <url>/2024/05/03/Rime%20%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Rime 是一个开源的跨平台输入法。但每次安装都要重新设置一番，而设置方法又常常忘记，因此记录一下。</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>配置文件在用户文件夹，修改 <code>default.custom.yaml</code> 文件即可。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">patch:</span><br>  <span class="hljs-attr">menu:</span><br>    <span class="hljs-attr">page_size:</span> <span class="hljs-number">9</span>    <span class="hljs-comment"># 每页九个候选</span><br>  <span class="hljs-attr">ascii_composer:</span><br>    <span class="hljs-attr">switch_key:</span><br>      <span class="hljs-attr">Shift_L:</span> <span class="hljs-string">commit_code</span>  <span class="hljs-comment"># 左shift键自动上屏并切换成英文</span><br>      <span class="hljs-attr">Enter:</span> <span class="hljs-string">inline_ascii</span>   <span class="hljs-comment"># 回车键自动上屏</span><br></code></pre></td></tr></table></figure><h2 id="日语输入"><a href="#日语输入" class="headerlink" title="日语输入"></a>日语输入</h2><p>使用<a href="https://github.com/gkovacs/rime-japanese">Rime-Japanese</a>给出的方案。直接从输入法设定中输入网址安装即可。如果无法连接网络，手动下载安装<a href="https://github.com/rime/plum">東風破Plum</a>。反正很小，放在一起也无妨。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>记录</tag>
+      
+      <tag>输入法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>二十分的雨</title>
     <link href="/2024/02/19/%E4%BA%8C%E5%8D%81%E5%88%86%E7%9A%84%E9%9B%A8/"/>
     <url>/2024/02/19/%E4%BA%8C%E5%8D%81%E5%88%86%E7%9A%84%E9%9B%A8/</url>
